@@ -11,7 +11,7 @@ async function f2() {
 
     data.push({ name: `${name}`, description: `${description}` });
   }
-  var json = JSON.stringify(data);
+  var json = JSON.stringify(data, null, 4);
 
   await fs.writeFile('data2.json', json, 'utf8');
 }
