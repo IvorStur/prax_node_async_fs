@@ -9,7 +9,7 @@ async function f2() {
     const name = faker.commerce.productName();
     const description = faker.commerce.productDescription();
 
-    data.push({ name: `${name}`, description: `${description}` });
+    data.push({ name: name, description: description });
   }
   var json = JSON.stringify(data, null, 4);
 
